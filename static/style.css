@@ -109,3 +109,50 @@ body {
   .fab:hover, fas:hover {
     color: #0070c0;
   }
+  
+  @media (max-width: 600px) {
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      width: 60%;
+    }
+
+    .links .button {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .container {
+      padding: 10px;
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .book-section img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .book-section p {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  }
