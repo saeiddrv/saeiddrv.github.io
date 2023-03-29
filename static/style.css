@@ -120,6 +120,7 @@ body {
     }
 
     li {
+      display: flex;
       width: 60%;
     }
 
