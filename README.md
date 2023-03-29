@@ -4,7 +4,7 @@ This is my personal profile page, where I showcase links to my social media prof
 
 ## License
 
-This template is licensed under the MIT License, which means you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the template, subject to certain conditions.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
