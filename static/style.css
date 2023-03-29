@@ -1,0 +1,111 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1d1d1d;
+    color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  p.center {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #2d2d2d;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .button:hover {
+    background-color: #303030;
+    color: #0070c0;
+  }
+
+  .button i {
+    margin-right: 10px;
+  }
+
+  .book-section {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .book-section img {
+    width: 100px;
+    margin-right: 50px;
+  }
+
+  .book-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .book-section p {
+    margin-bottom: 30px;
+  }
+
+  .book-section a {
+    display: inline-block;
+    background-color: #2d2d2d;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .book-section a:hover {
+    background-color: #303030;
+  }
+
+  .book-section a i {
+    margin-right: 10px;
+  }
+
+  .fab, .fas {
+    color: #007bff;
+  }
+
+  .fab:hover, fas:hover {
+    color: #0070c0;
+  }
