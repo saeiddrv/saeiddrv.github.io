@@ -1,4 +1,4 @@
-# My Personal Page
+# Naughty Template
 
 This is my personal profile page, where I showcase links to my social media profiles and projects. The page is designed to be simple, modern, and responsive, using a combination of HTML, CSS, and Font Awesome icons.
 
