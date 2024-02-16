@@ -64,7 +64,6 @@ body {
   .book-section {
     display: flex;
     align-items: center;
-    margin-top: 50px;
   }
 
   .book-section img {
@@ -108,6 +107,15 @@ body {
 
   .fab:hover, fas:hover {
     color: #0070c0;
+  }
+  
+  .book-section-intro {
+    margin: 40px 0px;
+  }
+
+  .book-section-intro h2 {
+    font-weight: 700;
+    font-size: 28px;
   }
   
   @media (max-width: 600px) {
