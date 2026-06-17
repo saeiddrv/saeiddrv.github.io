@@ -64,6 +64,7 @@ body {
   .book-section {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
   }
 
   .book-section img {
