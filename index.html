@@ -1,73 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Saeid Darvishghazvini</title>
-    <meta name="description" content="Saeed Darvish, personal page"/>
+    <meta name="description" content="Saeid Darvishghazvini — Software Engineer. Personal page with projects, open-source work, and social links."/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='static/favicon.ico' />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="static/style.css">
-    <style>
-    </style>
-  </head
+  </head>
   <body>
-    <div class="container">
-      <img src="static/saeiddrv-profile.png" alt="saeiddrv profile" style="width:100%;max-width:300px;border-radius:50%;margin:0 auto;display:block;">
-      <h1>Saeid Darvishghazvini</h1>
-      <p class="center">Software Engineer</p>
-      <ul class="links">
-        <li>
-          <a href="https://twitter.com/saeiddrv" target="_blank" class="button">
-            <i class="fab fa-twitter"></i>
-            Twitter
+    <div class="bg-glow"></div>
+    <main class="container">
+      <header class="hero">
+        <img class="avatar" src="static/saeiddrv-profile.png" alt="Saeid Darvishghazvini profile photo">
+        <h1>Saeid Darvishghazvini</h1>
+        <p class="subtitle">Software Engineer</p>
+
+        <nav class="links" aria-label="Social links">
+          <a href="https://github.com/saeiddrv" target="_blank" rel="noopener" class="button" aria-label="GitHub">
+            <i class="fab fa-github"></i><span>GitHub</span>
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/saeiddrv" target="_blank" class="button">
-            <i class="fab fa-github"></i>
-            GitHub
+          <a href="https://www.linkedin.com/in/saeiddrv" target="_blank" rel="noopener" class="button" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i><span>LinkedIn</span>
           </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/saeiddrv" target="_blank" class="button">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn
+          <a href="https://twitter.com/saeiddrv" target="_blank" rel="noopener" class="button" aria-label="Twitter">
+            <i class="fab fa-twitter"></i><span>Twitter</span>
           </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@saeiddrv" target="_blank" class="button">
-            <i class="fab fa-medium"></i>
-            Medium
+          <a href="https://medium.com/@saeiddrv" target="_blank" rel="noopener" class="button" aria-label="Medium">
+            <i class="fab fa-medium"></i><span>Medium</span>
           </a>
-        </li>
-      </ul>
-      <div class="book-section-intro">
-        <h2>My Works</h2>
-      </div>
-      <div class="book-section">
-        <img src="static/python-in-persian-book-cover.png" alt="Python in Persian Book's Cover">
-        <div>
-          <h2>Python in Persian</h2>
-          <p>An open-source and online book that provides a comprehensive tutorial on the Python programming language in Persian. This book serves as a valuable resource for Persian-speaking learners seeking to develop their skills in Python programming.</p>
-          <a href="https://pythonpersian.com" target="_blank" class="button">
-            <i class="fas fa-book"></i>
-            Read the Book
-          </a>
-        </div>
-      </div>
-      <div class="book-section">
-        <img src="static/snowball-logo.gif" alt="Snowball Stemmer Logo">
-        <div>
-          <h2>Snowball Persian Stemmer</h2>
-          <p>I contributed to the Snowball stemming algorithms project by adding a Persian language stemmer. Snowball is a widely used framework for designing stemming algorithms, and this contribution helps improve information retrieval and natural language processing for Persian text.</p>
-          <a href="https://snowballstem.org/algorithms/persian/stemmer.html" target="_blank" class="button">
-            <i class="fas fa-snowflake"></i>
-            View the Algorithm
-          </a>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </header>
+
+      <section class="works" aria-labelledby="works-title">
+        <h2 class="section-title" id="works-title">Open Source</h2>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="static/python-in-persian-book-cover.png" alt="Python in Persian book cover">
+          </div>
+          <div class="card-body">
+            <h3>Python in Persian</h3>
+            <p>An open-source, online book providing a comprehensive tutorial on the Python programming language in Persian — a valuable resource for Persian-speaking learners developing their Python skills.</p>
+            <a href="https://pythonpersian.com" target="_blank" rel="noopener" class="card-link">
+              <i class="fas fa-book"></i> Read the Book
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="static/snowball-logo.gif" alt="Snowball stemmer logo">
+          </div>
+          <div class="card-body">
+            <h3>Snowball Persian Stemmer</h3>
+            <p>I contributed a Persian language stemmer to the Snowball stemming algorithms project — a widely used framework for designing stemmers that helps improve information retrieval and natural language processing for Persian text.</p>
+            <a href="https://snowballstem.org/algorithms/persian/stemmer.html" target="_blank" rel="noopener" class="card-link">
+              <i class="fas fa-snowflake"></i> View the Algorithm
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Saeid Darvishghazvini</p>
+      </footer>
+    </main>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </body>
 </html>
