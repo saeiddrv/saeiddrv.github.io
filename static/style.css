@@ -184,6 +184,13 @@ h1 {
   border-radius: 10px;
 }
 
+/* An SVG mark rather than a cover or a screenshot: it would otherwise render
+   at whatever intrinsic size the viewBox implies, which is tiny. */
+.card-media img[src$=".svg"] {
+  width: 96px;
+  height: 96px;
+}
+
 .card-body h3 {
   font-size: 20px;
   font-weight: 700;
@@ -229,6 +236,37 @@ h1 {
 
 .footer p {
   margin: 0;
+}
+
+.coffee {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.coffee i {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.coffee:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background-color: var(--surface-2);
+}
+
+.coffee:hover i {
+  color: #fff;
 }
 
 /* ---------- Responsive ---------- */
